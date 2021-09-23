@@ -6,6 +6,28 @@
   font-size: 14px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 375px;
+  background: url(./images/bg-mobile.png);
+  background-repeat: no-repeat;
+  /* background-attachment: local; */
+  background-size: cover;
+  margin: auto;
+  padding: 2rem;
+}
+
 /* FOOTER */
 
 .attribution {

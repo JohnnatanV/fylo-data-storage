@@ -20,13 +20,45 @@
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
   <body>
-    You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+    <div class="page-container">
+      <header class="tittle">
+        <h1 class="sr-only">Fylo storage manager</h1>
+        <img class="tittle__logo" src="./images/logo.svg" alt="" />
+        <div class="tittle__icons">
+          <a href="#" class="tittle__icons-box"
+            ><img src="./images/icon-document.svg" alt=""
+          /></a>
+          <a href="#" class="tittle__icons-box"
+            ><img src="./images/icon-folder.svg" alt=""
+          /></a>
+          <a href="#" class="tittle__icons-box"
+            ><img src="./images/icon-upload.svg" alt=""
+          /></a>
+        </div>
+      </header>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <main>
+        <p>You’ve used 815 GB of your storage</p>
+        <div class="progress-state">
+          <div class="progress-state__bar"></div>
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+        <div class="main-box">
+          <h2>
+            185
+            <p>GB Left</p>
+          </h2>
+        </div>
+      </main>
     </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
   </body>
 </html>
