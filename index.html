@@ -38,26 +38,33 @@
       </header>
 
       <main>
-        <p>You’ve used 815 GB of your storage</p>
+        <p class="info-text">You’ve used <b>815 GB</b> of your storage</p>
         <div class="progress-state">
-          <div class="progress-state__bar"></div>
-          <p>0 GB</p>
-          <p>1000 GB</p>
+          <div class="progress-state__bar">
+            <div class="bar">
+              <span class="marker"></span>
+            </div>
+          </div>
+          <div class="progress-state__text">
+            <p class="progress-state__text-item">0 GB</p>
+            <p class="progress-state__text-item">1000 GB</p>
+          </div>
         </div>
         <div class="main-box">
-          <h2>
-            185
-            <p>GB Left</p>
-          </h2>
+          <h2 class="main-box__state">185</h2>
+          <p class="main-box__state-info">GB Left</p>
         </div>
       </main>
     </div>
     <footer>
-      <div class="attribution">
+      <div class="attribution sr-only">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a href="https://github.com/JohnnatanV/fylo-data-storage"
+          >Johnnatan Villaneda</a
+        >.
       </div>
     </footer>
   </body>
