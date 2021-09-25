@@ -21,38 +21,42 @@
   </head>
   <body>
     <div class="page-container">
-      <header class="tittle">
+      <header>
         <h1 class="sr-only">Fylo storage manager</h1>
-        <img class="tittle__logo" src="./images/logo.svg" alt="" />
-        <div class="tittle__icons">
-          <a href="#" class="tittle__icons-box"
-            ><img src="./images/icon-document.svg" alt=""
-          /></a>
-          <a href="#" class="tittle__icons-box"
-            ><img src="./images/icon-folder.svg" alt=""
-          /></a>
-          <a href="#" class="tittle__icons-box"
-            ><img src="./images/icon-upload.svg" alt=""
-          /></a>
-        </div>
       </header>
 
-      <main>
-        <p class="info-text">You’ve used <b>815 GB</b> of your storage</p>
-        <div class="progress-state">
-          <div class="progress-state__bar">
-            <div class="bar">
-              <span class="marker"></span>
-            </div>
-          </div>
-          <div class="progress-state__text">
-            <p class="progress-state__text-item">0 GB</p>
-            <p class="progress-state__text-item">1000 GB</p>
+      <main class="container">
+        <div class="tittle">
+          <img class="tittle__logo" src="./images/logo.svg" alt="" />
+          <div class="tittle__icons">
+            <a href="#" class="tittle__icons-box"
+              ><img class="icon" src="./images/icon-document.svg" alt=""
+            /></a>
+            <a href="#" class="tittle__icons-box"
+              ><img class="icon" src="./images/icon-folder.svg" alt=""
+            /></a>
+            <a href="#" class="tittle__icons-box"
+              ><img class="icon" src="./images/icon-upload.svg" alt=""
+            /></a>
           </div>
         </div>
-        <div class="main-box">
-          <h2 class="main-box__state">185</h2>
-          <p class="main-box__state-info">GB Left</p>
+        <div class="progress">
+          <p class="info-text">You’ve used <b>815 GB</b> of your storage</p>
+          <div class="progress-state">
+            <div class="progress-state__bar">
+              <div class="bar">
+                <span class="marker"></span>
+              </div>
+            </div>
+            <div class="progress-state__text">
+              <p class="progress-state__text-item">0 GB</p>
+              <p class="progress-state__text-item">1000 GB</p>
+            </div>
+          </div>
+          <div class="main-box">
+            <h2 class="main-box__state">185</h2>
+            <p class="main-box__state-info">GB Left</p>
+          </div>
         </div>
       </main>
     </div>
