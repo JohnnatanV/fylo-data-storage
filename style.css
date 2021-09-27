@@ -7,6 +7,18 @@
   color: var(--Pale-Blue);
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background: url(./images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 :root {
   /* ### Primary */
 
@@ -21,20 +33,6 @@
   --Very-Dark-Blue: hsl(229, 57%, 11%);
 }
 
-/* BODY */
-
-.page-container {
-  width: 100vw;
-  height: 100vh;
-  background: url(./images/bg-mobile.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-}
-
-/* header */
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -45,16 +43,26 @@
   border: 0;
 }
 
+.page-container {
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* MAIN */
 
 .container {
   width: 100%;
+  max-width: 25.42rem;
   margin: auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: left;
 }
+
+/* Tittle */
 
 .tittle,
 .progress {
@@ -64,7 +72,11 @@
 .tittle {
   background: var(--Dark-Blue);
   border-radius: 0.7rem 7rem 0.7rem 0.7rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tittle__logo {
+  width: auto;
 }
 
 .tittle__icons {
@@ -90,8 +102,11 @@
 }
 
 .icon {
+  width: auto;
   margin: auto;
 }
+
+/* Progress */
 
 .progress {
   background: var(--Dark-Blue);
@@ -195,6 +210,7 @@
   margin-left: 0.5rem;
   text-transform: uppercase;
 }
+
 /* FOOTER */
 
 .attribution {
@@ -204,11 +220,10 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
-/* Tablet */
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
   .container {
     width: 70%;
+    max-width: 57.25rem;
   }
 
   .tittle__icons-box {
@@ -220,17 +235,20 @@
     width: 2.4rem;
   }
 }
+
 /* Desktop */
-@media screen and (min-width: 1024px) {
-  .page-container {
-    background: url(./images/bg-desktop.png);
+
+@media screen and (min-width: 1200px) {
+  body {
+    background: url(./images/bg-desktop.png) var(--Very-Dark-Blue);
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: cover;
+    background-size: contain;
   }
 
   .container {
     width: 80%;
+    max-width: 90rem;
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
@@ -301,34 +319,3 @@
     font-size: 0.7rem;
   }
 }
-/* 
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
-
-### Neutral
-
-- Pale Blue: hsl(243, 100%, 93%)
-- Grayish Blue: hsl(229, 7%, 55%)
-- Dark Blue: hsl(228, 56%, 26%)
-- Very Dark Blue: hsl(229, 57%, 11%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 14px
-
-### Font
-
-- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
-- Weights: 400, 700
-
-*/
